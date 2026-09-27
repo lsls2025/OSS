@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="agit_background">#FFF8F9FA</color>
+    <color name="splash_background">#FFF8F9FA</color>
+    <color name="agit_launcher_background">@android:color/transparent</color>
+</resources>

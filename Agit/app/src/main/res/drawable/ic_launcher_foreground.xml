@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 主干连线 -->
+    <path
+        android:pathData="M48,40 L48,76"
+        android:strokeColor="#4493F8"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
+
+    <!-- 分支曲线 -->
+    <path
+        android:pathData="M48,58 C48,58 76,58 76,46"
+        android:strokeColor="#3FB950"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- 提交节点 -->
+    <path
+        android:pathData="M48,32 a8,8 0 1,0 0.01,0 z"
+        android:fillColor="#58A6FF" />
+    <path
+        android:pathData="M48,50 a8,8 0 1,0 0.01,0 z"
+        android:fillColor="#58A6FF" />
+    <path
+        android:pathData="M48,68 a8,8 0 1,0 0.01,0 z"
+        android:fillColor="#58A6FF" />
+    <path
+        android:pathData="M76,38 a8,8 0 1,0 0.01,0 z"
+        android:fillColor="#3FB950" />
+</vector>
