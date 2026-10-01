@@ -1,0 +1,37 @@
+# Gradle / Android 构建产物
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+*.dex
+*.class
+
+# 本地环境配置（含 sdk.dir 本机路径，勿提交）
+local.properties
+*.properties.user
+
+# IDE / 编辑器
+.idea/
+*.iml
+.vscode/
+.history/
+.kotlin/
+.codebuddy/
+
+# 后端运行时数据（含生产数据库、TLS 证书私钥、用户上传文件，勿提交）
+backend/data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# 后端编译产物
+backend/aurora-server
+backend/*.exe
+backend/*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.log

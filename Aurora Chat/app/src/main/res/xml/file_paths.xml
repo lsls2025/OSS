@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="camera_photos" path="." />
+    <files-path name="downloads" path="downloads/" />
+    <files-path name="agent" path="ai_files/" />
+    <files-path name="share_inbox" path="share_inbox/" />
+    <external-files-path name="ext_downloads" path="Download/" />
+</paths>

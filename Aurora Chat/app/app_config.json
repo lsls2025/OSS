@@ -1,0 +1,10 @@
+{
+  "minSdkVersion": 26.0,
+  "viewBindingEnabled": false,
+  "libraries": "[]",
+  "useR8": false,
+  "targetSdkVersion": 35.0,
+  "versionName": "1.6.0",
+  "versionCode": 16.0,
+  "zipAlignEnabled": false
+}

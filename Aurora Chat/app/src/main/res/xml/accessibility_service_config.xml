@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  无障碍服务配置：
+  - canRetrieveWindowContent：允许读屏（拿到当前界面的元素树），AI 靠它知道「用户现在在哪」
+  - canPerformGestures：允许派发手势（点击 / 长按 / 滑动）
+  - canTakeScreenshot：Android 11+ 免 root 截屏
+  - flagRequestFilterKeyEvents：保留原有「隐私锁定拦截返回键」能力
+  - flagRetrieveInteractiveWindows：允许读取「所有交互窗口」，而不只是前台应用窗口。
+    卸载确认框由系统组件（packageinstaller）托管，属于独立窗口；不开这个 flag 时
+    部分 ROM 上 rootInActiveWindow 读不到它，导致「明明弹了框却说没弹」的误判。
+  - eventTypes 同时监听内容变化：点击后目标应用界面渲染完成会触发 TYPE_WINDOW_CONTENT_CHANGED，
+    PhoneControl 据此等待界面稳定后再读屏，避免读到上一个界面的旧节点树
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeViewScrolled"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagRequestFilterKeyEvents|flagRetrieveInteractiveWindows"
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+    android:canTakeScreenshot="true"
+    android:notificationTimeout="100" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_background">#FF000000</color>
+    <color name="icon_bg_aurora">#4F46E5</color>
+    <color name="icon_bg_wechat">#07C160</color>
+    <color name="icon_bg_qq">#12B7F5</color>
+    <color name="icon_bg_qianwen">#7C5CFF</color>
+    <color name="icon_bg_zerotermux">#111827</color>
+    <color name="icon_bg_computer">#3B82F6</color>
+    <color name="icon_bg_kuaishou">#FF5A36</color>
+</resources>
