@@ -1,0 +1,5 @@
+version_code=30
+version_name=3.0.0
+download_url=https://www.example.com/tools/AuroraChat.apk
+force_update=false
+update_message=发现新版本，请更新后继续使用。

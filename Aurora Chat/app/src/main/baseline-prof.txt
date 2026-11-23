@@ -1,0 +1,44 @@
+# Baseline Profile（human-readable）
+# 覆盖冷启动路径 + 高频 Compose 组合项 + 关键数据/存储类，使 ART 在安装时预编译热点，
+# 缩短冷启动首帧并提升长列表滑动首屏帧率。规则由 AGP 在 R8 开启时编译为二进制 profile。
+
+# ---- 冷启动入口（方法级，确保必编译） ----
+HSPLcom/aurora/chat/AuroraChatApplication;->onCreate()V
+HSPLcom/aurora/chat/MainActivity;->onCreate(Landroid/os/Bundle;)V
+HSPLcom/aurora/chat/MainActivity;->onCreate$lambda$*()
+
+# ---- 启动 IO / 网络 / 存储（类级热点） ----
+Lcom/aurora/chat/data/api/HttpClient;
+Lcom/aurora/chat/data/api/AuroraApi;
+Lcom/aurora/chat/data/local/AvatarCache;
+Lcom/aurora/chat/data/local/LocalMessageStore;
+Lcom/aurora/chat/data/local/LocalConversationStore;
+Lcom/aurora/chat/data/local/LocalStorage;
+Lcom/aurora/chat/data/local/DataCache;
+Lcom/aurora/chat/data/store/MessageStore;
+Lcom/aurora/chat/data/store/MessageStoreAdapter;
+Lcom/aurora/chat/TcpService;
+
+# ---- 聊天（最高频组合项） ----
+Lcom/aurora/chat/ui/chat/ChatConversationScreenKt;
+Lcom/aurora/chat/ui/chat/ChatScreenKt;
+Lcom/aurora/chat/ui/chat/MessageBubbleItemKt;
+Lcom/aurora/chat/ui/chat/MessageBubbleKt;
+Lcom/aurora/chat/ui/chat/InputBarKt;
+Lcom/aurora/chat/ui/chat/model/MessageRenderModelKt;
+Lcom/aurora/chat/viewmodel/ChatViewModel;
+
+# ---- 社区（高频滚动） ----
+Lcom/aurora/chat/ui/community/CommunityScreenKt;
+Lcom/aurora/chat/ui/community/CommunityPostFeedKt;
+Lcom/aurora/chat/ui/community/PostDetailScreenKt;
+Lcom/aurora/chat/ui/community/CreatePostScreenKt;
+Lcom/aurora/chat/ui/community/CommunityFeedPresenter;
+
+# ---- 我的 / 联系人 / 开发者（常进页面） ----
+Lcom/aurora/chat/ui/profile/ProfileScreenKt;
+Lcom/aurora/chat/ui/profile/EditProfileScreenKt;
+Lcom/aurora/chat/ui/profile/LoginScreenKt;
+Lcom/aurora/chat/ui/profile/DeveloperManagementScreenKt;
+Lcom/aurora/chat/ui/profile/ErrorLogScreenKt;
+Lcom/aurora/chat/ui/contacts/ContactsScreenKt;

@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 安装外部应用：向下箭头落入托盘 -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M11,3h2v8.17l2.59,-2.58L17,10l-5,5 -5,-5 1.41,-1.42L11,11.17V3z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M4,18h16v2H4z" />
+</vector>

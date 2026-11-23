@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 相机拍摄暂存（ChatConversationScreen 选中后经 FileProvider 上传）。
+         原来 path="." 等于把整个 cacheDir 授权出去——那里面还有 http_cache
+         （可能缓存带 token 的响应）、logged_in_servers.json、错误报告等敏感数据。
+         按实际用途收窄到具体子目录/文件。 -->
+    <cache-path name="camera_photos" path="camera_captures/" />
+    <!-- 错误报告分享（ErrorReporter 生成 aurora_report.log 后发出） -->
+    <cache-path name="error_report" path="aurora_report.log" />
+    <!-- 工作区文件夹分享：先压到 cacheDir/aurora_share/ 再发（QQ/微信只收文件不收目录） -->
+    <cache-path name="aurora_share" path="aurora_share/" />
+    <files-path name="downloads" path="downloads/" />
+    <!-- 收藏媒体（FavoritesStore 复制到 filesDir/favorites/media/ 的文件，收藏页「打开文件」用） -->
+    <files-path name="favorites" path="favorites/" />
+    <files-path name="agent" path="ai_files/" />
+    <files-path name="share_inbox" path="share_inbox/" />
+    <external-files-path name="ext_downloads" path="Download/" />
+</paths>

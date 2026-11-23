@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 收款码占位图：开源版本不含任何真实收款账户。自建部署时替换为自有收款码。 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size android:width="200dp" android:height="200dp" />
+    <solid android:color="#F5F5F5" />
+    <stroke android:width="2dp" android:color="#BDBDBD" />
+    <padding android:left="16dp" android:top="16dp" android:right="16dp" android:bottom="16dp" />
+</shape>
