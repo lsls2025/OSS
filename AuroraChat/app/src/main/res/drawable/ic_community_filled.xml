@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 选中：保持地球仪描边造型，仅换品牌色（不再用实心圆盘，避免"变图标"） -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#1E40AF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12 2a10 10 0 1 1 0 20 10 10 0 1 1 0-20z" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#1E40AF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#1E40AF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M2 12h20" />
+</vector>
